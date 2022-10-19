@@ -1,124 +1,148 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--clr--light: #fff;
-	--clr--dark: #252641;
-	--accent--primary: #f48c06;
-	--clr--primary: #2f327d;
-	--accent--secondary: #65daff;
-	--section--padding: 4rem;
+  --clr--light: #fff;
+  --clr--dark: #252641;
+  --accent--primary: #f48c06;
+  --clr--primary: #2f327d;
+  --accent--secondary: #65daff;
+  --section--padding: 4rem;
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-	color: var(--clr--dark);
+  color: var(--clr--dark);
 }
 
 /* general */
 ul {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-	display: inline-block;
-	text-decoration: none;
-	color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* utilities */
+span {
+  color: var(--accent--primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .flex {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .container {
-	width: 80%;
-	max-width: 1100px;
-	margin: 0 auto;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .container2 {
-	margin: 0 auto;
-	max-width: 900px;
-	width: 80%;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
 }
 
 .btn {
-	background-color: transparent;
-	padding: 0.5rem 1.5rem;
-	border-radius: 100px;
-	text-align: center;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100px;
+  text-align: center;
+  font-size: small;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid var(--clr--light);
+}
+
+.btn-big {
+  padding: 1rem 3rem;
+}
+
+.btn-blue {
+  background-color: var(--accent--secondary);
 }
 
 .btn-clr {
-	background-color: var(--accent--primary);
-	color: var(--clr--light);
+  background-color: var(--accent--primary);
+  color: var(--clr--light);
 }
 .btn-light {
-	background-color: var(--clr--light);
-	color: var(--accent--primary);
+  background-color: var(--clr--light);
+  color: var(--accent--primary);
 }
 .fa-solid {
-	color: var(--clr--light);
-	text-align: center;
+  color: var(--clr--light);
+  text-align: center;
 }
 
 /* main */
 
 .main {
-	background-image: url('https://media.istockphoto.com/photos/portrait-of-happy-lazy-little-girl-covering-head-with-book-and-to-picture-id1213375869?b=1&k=20&m=1213375869&s=170667a&w=0&h=tIdYk9Ku_1C2hmlxywVZcAbLRjifDgWJlGmGHCstimw=');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+  background-image: url('https://media.istockphoto.com/photos/portrait-of-happy-lazy-little-girl-covering-head-with-book-and-to-picture-id1213375869?b=1&k=20&m=1213375869&s=170667a&w=0&h=tIdYk9Ku_1C2hmlxywVZcAbLRjifDgWJlGmGHCstimw=');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-	background-color: #fff3e4;
-	min-height: 100vh;
+  background-color: #fff3e4;
+  min-height: 100vh;
 }
 
 .header {
-	justify-content: space-between;
-	padding: 1rem 0;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .header .nav {
-	gap: 5rem;
+  gap: 5rem;
 }
 
 .header ul li {
-	padding-right: 0.6rem;
+  padding-right: 0.6rem;
 }
 
 .header .cta {
-	gap: 2rem;
+  gap: 2rem;
 }
 
 /* section-a */
 .section-a .text {
-	margin-top: 10rem;
-	width: 40%;
+  margin-top: 10rem;
+  width: 40%;
 }
 
 .section-a h1 {
-	color: var(--clr--primary);
-	/* font-size: 2.5rem; */
-}
-
-.section-a h1 span {
-	color: var(--accent--primary);
+  color: var(--clr--primary);
+  /* font-size: 2.5rem; */
 }
 
 .section-a .cta {
-	margin-top: 2rem;
-	gap: 2rem;
+  margin-top: 2rem;
+  gap: 2rem;
 }
 .section-a .cta span {
-	display: inline-block;
+  display: inline-block;
+  color: var(--clr--dark);
 }
 
 /* section-b */
@@ -126,62 +150,115 @@ a {
 /* brands */
 
 .section-b .brands {
-	justify-content: center;
+  justify-content: center;
 }
 
 .section-b .brands img {
-	/* background: transparent;*/
-	width: 40%;
+  /* background: transparent;*/
+  width: 40%;
 }
 
 .section-b {
-	padding: var(--section--padding) 0;
+  padding: var(--section--padding) 0;
 }
 
 .section-b .support {
-	flex-direction: column;
-	justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-b .new-features {
-	flex-direction: column;
-	gap: 5rem;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .section-b .new-features .text {
-	text-align: center;
+  text-align: center;
 }
 
 .section-b .slide {
-	gap: 1rem;
-	align-items: stretch;
+  gap: 1rem;
+  align-items: stretch;
 }
 
 .section-b .slide > div {
-	flex: 1;
-	width: 100%;
-	background-color: var(--clr--light);
-	border-radius: 0.4rem;
-	padding: 1em;
-	text-align: center;
-	line-height: 1.3;
-	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-	position: relative;
+  flex: 1;
+  width: 100%;
+  background-color: var(--clr--light);
+  border-radius: 0.4rem;
+  padding: 1em;
+  text-align: center;
+  line-height: 1.3;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  position: relative;
 }
 
 .section-b .icon-wrap {
-	position: absolute;
-	background-color: #f48c06;
-	top: 0%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 1rem;
-	border-radius: 100%;
+  position: absolute;
+  background-color: #f48c06;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 100%;
 }
 
 .section-b .icon-wrap.wrap1 {
-	background-color: var(--clr--primary);
+  background-color: var(--clr--primary);
 }
 .section-b .icon-wrap.wrap3 {
-	background-color: var(--accent--secondary);
+  background-color: var(--accent--secondary);
+}
+
+/* section-c */
+.section-c {
+  padding: var(--section--padding) 0;
+}
+
+.section-c .text {
+  text-align: center;
+}
+
+.section-c .img img {
+  border-radius: 1rem;
+  /* width: 50%; */
+}
+
+.section-c .img.flex {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.section-c .img > div {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.section-c .img > div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--clr--dark);
+  opacity: 0.6;
+  border-radius: 1rem;
+}
+
+.section-c .img > div > div {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: var(--clr--light);
+}
+
+.section-c .img > div > div p,
+.section-c .img > div > div a {
+  text-transform: uppercase;
 }
